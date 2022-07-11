@@ -30,6 +30,8 @@ void main(List<String> args) {
   print(pat(9));
   Person person = Person('John Osei Darko', 4611118);
   person.show();
+  var newperson = Person.age();
+  debugPrint('Please print $newperson');
   Tools tools = Tools('Darko Ernest', 788);
   // tools.driver = 'James Darko';
   // tools.driverno = 5666;
@@ -52,6 +54,9 @@ class Person {
   dynamic name;
 
   Person(this.name, [this.indexno = 18]);
+  Person.age() {
+    debugPrint('Provide Age');
+  }
 
   //named constructor
   Person.college();
